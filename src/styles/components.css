@@ -1,0 +1,40 @@
+.registration__button-close {
+	width: 20px;
+	position: relative;
+	right: 30px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.registration {
+	background-color: var(--color-blue);
+	width: 428px;
+	height: 401px;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	border-radius: 5px;
+}
+
+.registration__title {
+	font-size: 1.5rem;
+	color: var(--color-white);
+}
+
+.registration__input {
+	color: var(--color-grey-500);
+	background-color: var(--color-white);
+	font-size: 1rem;
+	border-radius: 5px;
+	padding: 0.5rem;
+	width: 246px;
+}
+
+.registration__button {
+	background-color: var(--color-yellow);
+	color: var(--color-white);
+	font-size: 1rem;
+	width: 132px;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: transparent;
+	cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>m2-entrega-blog-m2</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./../src/styles/reset.css" />
+		<link rel="stylesheet" href="./../src/styles/base.css" />
+		<link rel="stylesheet" href="./../src/styles/components.blog.css" />
+		<link rel="stylesheet" href="./../src/styles/style.blog.css" />
+	</head>
+	<body>
+		<div class="header--bgc-blue">
+			<header class="header">
+				<div class="info__user">
+					<img
+						src="./../src/assets/imgs/gatinhoFofo.png"
+						alt=""
+						class="user__img"
+					/>
+					<h1 class="user__name">GatinhoFofo</h1>
+				</div>
+				<button class="button__logout">Logout</button>
+			</header>
+		</div>
+
+		<main class="container--bgc-grey">
+			<section class="container__section">
+				<div class="post__create">
+					<form class="post__form" action="">
+						<textarea name="post-text" placeholder="Comece seu post incrível">
+						</textarea>
+						<button class="button__plus">
+							<img src="./../src/assets/imgs/+.png" alt="" />
+						</button>
+					</form>
+				</div>
+				<ul class="post">
+					<li class="post__item">
+						<figure class="post__img">
+							<img
+								src="./../src/assets/imgs/gatinhoFofo.png"
+								alt="user-avatar"
+							/>
+						</figure>
+						<h1 class="post__user-name">GatinhoFofo</h1>
+						<p class="post__text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Accusamus at atque fugit eum recusandae quasi neque, minima,
+							commodi deleniti magnam modi earum nisi voluptate aspernatur odit
+							doloremque aut, facilis iste.
+						</p>
+						<div class="post__button">
+							<button class="button_edit">Editar</button>
+							<button class="button_delete">Apagar</button>
+							<span class="post__date">05/02/2023</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>
