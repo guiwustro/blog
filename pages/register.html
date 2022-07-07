@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>kenzie-blog</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./../src/styles/reset.css" />
+		<link rel="stylesheet" href="./../src/styles/base.css" />
+		<link rel="stylesheet" href="./../src/styles/components.css" />
+		<link rel="stylesheet" href="./../src/styles/style.register.css" />
+	</head>
+	<body>
+		<div class="header--bgc-blue">
+			<header class="header">
+					<h1 class="logo">Kenzie Blog</h1>
+					<a href="./../index.html" class="register__button button">Login</a>
+				</div>
+		</div>
+
+		<main class="container">
+			<section class="registration">
+				<form action="" class="registration__form" id="register-form">
+					<h1 class="registration__title">Cadastro</h1>
+					<input
+						class="registration__input"
+						type="text"
+						name="user"
+						placeholder="Nome de usuário"
+						required
+					/>
+					<input
+						class="registration__input"
+						type="email"
+						name="email"
+						placeholder="Email"
+						required
+
+					/>
+					<input
+						class="registration__input"
+						type="url"
+						name="picture"
+						required
+						placeholder="Foto de perfil"
+					/>
+					<input
+						class="registration__input"
+						type="password"
+						name="password"
+						required
+						placeholder="Senha"
+					/>
+					<button class="registration__button button">Cadastrar</button>
+				</form>
+			</section>
+		</main>
+		<script src="./../src/js/pages/register.js" type="module"></script>
+	</body>
+</html>

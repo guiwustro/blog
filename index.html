@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>kenzie-blog</title>
+		<title>Document</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -12,47 +12,50 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="src/styles/reset.css" />
-		<link rel="stylesheet" href="src/styles/base.css" />
-		<link rel="stylesheet" href="src/styles/components.css" />
-		<link rel="stylesheet" href="src/styles/style.css" />
+		<link rel="stylesheet" href="../src/styles/reset.css" />
+		<link rel="stylesheet" href="../src/styles/base.css" />
+		<link rel="stylesheet" href="../src/styles/components.css" />
+		<link rel="stylesheet" href="../src/styles/style.login.css" />
 	</head>
 	<body>
+		<div class="header--bgc-blue">
+			<header class="header">
+				<h1 class="logo">Kenzie Blog</h1>
+				<a href="pages/register.html" class="register__button button"
+					>Registre-se</a
+				>
+			</header>
+		</div>
 		<main class="container">
-			<section class="registration">
-				<button class="registration__button-close">
-					<img src="src/assets/imgs/X.png" alt="Botão Fechar" />
+			<section class="login">
+				<button class="login__button-close">
+					<img src="../src/assets/imgs/X.png" alt="Botão Fechar" />
 				</button>
-				<form action="" class="registration__form" id="register-form">
-					<h1 class="registration__title">Cadastro</h1>
+				<form action="" class="login__form" id="login-form">
+					<h1 class="login__title">Login</h1>
 					<input
-						class="registration__input"
-						type="text"
-						name="user"
-						placeholder="Nome de usuário"
-					/>
-					<input
-						class="registration__input"
+						class="login__input"
 						type="email"
 						name="email"
-						placeholder="Email"
+						placeholder="E-mail"
+						required
 					/>
 					<input
-						class="registration__input"
-						type="url"
-						name="picture"
-						placeholder="Foto de perfil"
-					/>
-					<input
-						class="registration__input"
+						class="login__input"
 						type="password"
 						name="password"
 						placeholder="Senha"
+						required
 					/>
-					<button class="registration__button">Cadastrar</button>
+					<button class="login__button button">Login</button>
+					<p class="register__text">
+						Ainda não é cadastrado?
+						<a href="pages/register.html" class="register__link">Clique aqui</a>
+						para se registrar.
+					</p>
 				</form>
 			</section>
 		</main>
-		<script src="src/js/script.js" type="module"></script>
+		<script type="module" src="./src/js/pages/login.js"></script>
 	</body>
 </html>

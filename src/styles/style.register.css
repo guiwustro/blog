@@ -22,73 +22,50 @@ body {
 }
 
 .container {
-	margin-top: 150px;
 	width: 100vw;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	margin-top: 150px;
 }
 
-.login {
+.registration {
 	display: grid;
-	grid-template-columns: 280px 20px;
+	background-color: var(--color-blue);
+	box-shadow: 0px 4px 4px 0px #00000040;
 	grid-template-areas:
 		"cadastro botaoX"
-		"cadastro nada"
-		"registrar nada";
+		"cadastro nada";
 }
-
-.login__form {
-	grid-area: cadastro;
+@media (min-width: 768px) {
+	.registration {
+		padding: 3rem;
+	}
+}
+.registration__form {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 25px;
-	height: inherit;
-	width: inherit;
-	padding: 2rem;
+	padding: 30px;
 }
 
-.login {
-	background-color: var(--color-blue);
-	width: 320px;
+.registration__form {
+	/* width: 428px; */
 	height: 401px;
-	box-shadow: 0px 4px 4px 0px #00000040;
 	border-radius: 5px;
 }
 
-.login__button-close {
-	grid-area: botaoX;
-	position: relative;
-	left: 10px;
-	top: 10px;
-	cursor: pointer;
-}
-
-.login__title {
+.registration__title {
 	font-size: 1.5rem;
 	color: var(--color-white);
 	padding-bottom: 20px;
 }
 
-.login__input {
+.registration__input {
 	color: var(--color-grey-500);
 	background-color: var(--color-white);
 	font-size: 1rem;
 	border-radius: 5px;
 	padding: 0.5rem;
 	width: 246px;
-}
-
-.register__text {
-	grid-area: register;
-	text-align: center;
-}
-.register__link {
-	color: var(--color-black);
-	font-weight: bold;
-}
-.register__link:hover {
-	color: var(--color-purple);
 }
