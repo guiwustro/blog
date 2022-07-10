@@ -67,11 +67,13 @@ Nela, são criados um arquivo style específico para cada página:
 
 1. syle.login.css
 2. style.blog.css
-3. style.register.css E também, arquivos reutilizados, e chamados em todas as
-   páginas, que são:
-4. base.css: utiliza-se o pseudoelemento "root" para salvar todas as cores CSS e
+3. style.register.css
+
+E também, arquivos reutilizados, e chamados em todas as páginas, que são:
+
+1. base.css: utiliza-se o pseudoelemento "root" para salvar todas as cores CSS e
    possíveis estilizações padronizadas numa variável;
-5. reset.css
-6. components.css: componentes que serão reutilizados nas páginas HTML, não
+2. reset.css
+3. components.css: componentes que serão reutilizados nas páginas HTML, não
    havendo a necessidade de repetição das mesmas estilizações, tais como,
    estilizações específicas para os botões ou para o modal;
