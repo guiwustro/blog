@@ -37,7 +37,7 @@ class Register {
 
 		const userLoginInfo = new UserLogin(dataUser.email, dataUser.password);
 		await Api.loginUser(userLoginInfo);
-		window.location.href = "./../../../pages/blog.html";
+		window.location.href = "../pages/blog.html";
 	}
 }
 

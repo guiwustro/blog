@@ -23,7 +23,7 @@ class Login {
 				"O email que você inseriu não está conectado a uma conta."
 			);
 		} else {
-			window.location.href = "./../../../pages/blog.html";
+			window.location.href = "../src/pages/blog.html";
 		}
 	}
 }

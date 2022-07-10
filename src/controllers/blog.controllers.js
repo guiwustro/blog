@@ -97,7 +97,7 @@ class Blog {
 	static logoutBlog() {
 		localStorage.removeItem("@kenzie-blog:token");
 		localStorage.removeItem("@kenzie-blog:userId");
-		window.location.href = "../../../index.html";
+		window.location.href = "../../index.html";
 	}
 
 	static async deletePost(event) {
