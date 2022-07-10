@@ -1,7 +1,7 @@
-import { User } from "../models/User.js";
-import { UserLogin } from "../models/UserLogin.js";
-import { Api } from "../Api.js";
-import { Modal } from "../views/Modal.js";
+import { User } from "../models/user.js";
+import { UserLogin } from "../models/userLogin.js";
+import { Api } from "../controllers/api.controllers.js";
+import { Modal } from "../models/modal.js";
 
 class Register {
 	static getInfoForm() {

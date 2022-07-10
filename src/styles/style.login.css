@@ -28,6 +28,11 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+@media (min-width: 768px) {
+	/* .login {
+		padding: 3rem;
+	} */
+}
 
 .login {
 	display: grid;
@@ -51,8 +56,8 @@ body {
 }
 
 .login {
-	background-color: var(--color-blue);
 	width: 320px;
+	background-color: var(--color-blue);
 	height: 401px;
 	box-shadow: 0px 4px 4px 0px #00000040;
 	border-radius: 5px;

@@ -1,7 +1,7 @@
-import { Api } from "../Api.js";
-import { UserLogin } from "../models/UserLogin.js";
-import { Modal } from "../views/Modal.js";
-class userLogin {
+import { Api } from "./api.controllers.js";
+import { UserLogin } from "../models/userLogin.js";
+import { Modal } from "../models/modal.js";
+class Login {
 	static getInfoLogin() {
 		const email = document.getElementsByName("email")[0].value;
 		const password = document.getElementsByName("password")[0].value;
@@ -10,9 +10,8 @@ class userLogin {
 	}
 
 	static async loginUser() {
-		const dataUserLogin = userLogin.getInfoLogin();
+		const dataUserLogin = Login.getInfoLogin();
 		const verifyUser = await Api.loginUser(dataUserLogin);
-		console.log(verifyUser);
 		if (verifyUser.message == "Invalid email or password") {
 			Modal.createEventModal(
 				"Senha ou e-mail incorreto",
@@ -28,4 +27,4 @@ class userLogin {
 		}
 	}
 }
-export default userLogin;
+export default Login;

@@ -1,4 +1,4 @@
-import { Api } from "../Api.js";
+import { Api } from "./api.controllers.js";
 class Blog {
 	static async headerInfoUser() {
 		const userData = await Api.getInfoUser();
@@ -42,7 +42,7 @@ class Blog {
 		const buttonsDiv = document.createElement("div");
 		buttonsDiv.className = "post__button";
 		if (dataPost.user.id == Api.userId) {
-			this.createButtonsPost(buttonsDiv, dataPost.id);
+			this.createTemplateButtonsPost(buttonsDiv, dataPost.id);
 		}
 
 		post.append(figure, username, postText, buttonsDiv);
@@ -58,7 +58,7 @@ class Blog {
 		return postList;
 	}
 
-	static createButtonsPost(buttonsDiv, id) {
+	static createTemplateButtonsPost(buttonsDiv, id) {
 		const buttonEdit = document.createElement("button");
 		buttonEdit.className = "button_edit";
 		buttonEdit.innerText = "Editar";
