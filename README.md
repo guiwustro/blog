@@ -43,7 +43,7 @@ utilizado somente JavaScript Vanilla, CSS e HTML.
 ## Usabilidade
 
 <div align="center">
-<img src="screenshots/nu-kenzie.gif">
+<img src="screenshots/blog.gif">
 </div>
 <!-- ROADMAP -->
 
