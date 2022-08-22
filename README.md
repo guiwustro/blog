@@ -36,7 +36,7 @@ deleta-la. Também há um botão de Logout para o usuário desconectar de sua co
 ## Tecnologias utilizadas
 
 O projeto foi realizado utilizando Programação Orientada a Objetos, sendo
-utilizado somente JavaScript Vanilla, CSS e HTML.
+utilizado somente JavaScript Vanilla, CSS (metodologia BEM) e HTML.
 
 <!-- USAGE EXAMPLES -->
 
